@@ -1,7 +1,6 @@
 # 0
 def higher_list():
-    counter1 = int(input('Задание 0. Введите количество элементов списка: '))
-    print('Введите элементы списка через пробел: ', end='')
+    print('Задание 0. Введите элементы списка через пробел: ', end='')
     list1 = list(map(int, input().split()))
     list2 = []
     for i in range(len(list1)):
@@ -12,8 +11,7 @@ def higher_list():
 
 # 1
 def change_elements():
-    counter1 = int(input('Задание 1. Введите количество элементов списка: '))
-    print('Введите элементы списка через пробел: ', end='')
+    print('Задание 1. Введите элементы списка через пробел: ', end='')
     list1 = list(map(int, input().split()))
     list2 = []
     min, max = list1[0], list1[0]
@@ -32,11 +30,9 @@ def change_elements():
 
 # 2
 def same_num():
-    counter1 = int(input('Задание 2. Введите количество элементов 1 списка: '))
-    print('Введите элементы списка через пробел: ', end='')
+    print('Задание 2. Введите элементы 1 списка через пробел: ', end='')
     list1 = list(map(int, input().split()))
-    counter1 = int(input('Введите количество элементов 2 списка: '))
-    print('Введите элементы списка через пробел: ', end='')
+    print('Введите элементы 2 списка через пробел: ', end='')
     list2 = list(map(int, input().split()))
     counter = 0
     for i in range(len(list1)):
