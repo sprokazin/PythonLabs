@@ -136,7 +136,7 @@ def task5():
     ax = fig.add_subplot(121, projection='3d')
 
     s1 = np.linspace(2.0, 4.0, 10)
-    s2 = np.linspace(1.5, 2.5, 10)
+    s2 = np.linspace(-10, 10, 10)
 
     X, Y = np.meshgrid(s1, s2)
     s3 = np.array([MSE(mp, bp, points)
@@ -149,13 +149,14 @@ def task5():
     ax.set_ylabel('Y')
     ax.set_zlabel('MSE')
 
+    Zlog = np.log(Z)
+
     ax = fig.add_subplot(122, projection='3d')
-    ax.plot_surface(X, Y, Z, rstride=1, cstride=1, color='b', alpha=0.5)
+    ax.plot_surface(X, Y, Zlog, rstride=1, cstride=1, color='b', alpha=0.5)
 
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
     ax.set_zlabel('MSE')
-    ax.set_zscale('log')
 
     plt.show()
 
